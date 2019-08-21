@@ -1,0 +1,10 @@
+C:\Users\usr\source\repos\challenges\configfile\ConsoleUI\bin\Debug\ConsoleUI.exe.config
+C:\Users\usr\source\repos\challenges\configfile\ConsoleUI\bin\Debug\ConsoleUI.exe
+C:\Users\usr\source\repos\challenges\configfile\ConsoleUI\bin\Debug\ConsoleUI.pdb
+C:\Users\usr\source\repos\challenges\configfile\ConsoleUI\obj\Debug\ConsoleUI.csprojAssemblyReference.cache
+C:\Users\usr\source\repos\challenges\configfile\ConsoleUI\obj\Debug\ConsoleUI.csproj.CoreCompileInputs.cache
+C:\Users\usr\source\repos\challenges\configfile\ConsoleUI\obj\Debug\ConsoleUI.exe
+C:\Users\usr\source\repos\challenges\configfile\ConsoleUI\obj\Debug\ConsoleUI.pdb
+C:\Users\usr\source\repos\challenges\configfile\ConsoleUI\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.dll
+C:\Users\usr\source\repos\challenges\configfile\ConsoleUI\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.xml
+C:\Users\usr\source\repos\challenges\configfile\ConsoleUI\obj\Debug\ConsoleUI.csproj.CopyComplete

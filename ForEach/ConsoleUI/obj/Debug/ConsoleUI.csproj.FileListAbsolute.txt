@@ -1,0 +1,14 @@
+C:\Users\Tim\Source\Repos\ForeachChallenge\ConsoleUI\bin\Debug\ConsoleUI.exe.config
+C:\Users\Tim\Source\Repos\ForeachChallenge\ConsoleUI\bin\Debug\ConsoleUI.exe
+C:\Users\Tim\Source\Repos\ForeachChallenge\ConsoleUI\bin\Debug\ConsoleUI.pdb
+C:\Users\Tim\Source\Repos\ForeachChallenge\ConsoleUI\obj\Debug\ConsoleUI.csprojAssemblyReference.cache
+C:\Users\Tim\Source\Repos\ForeachChallenge\ConsoleUI\obj\Debug\ConsoleUI.csproj.CoreCompileInputs.cache
+C:\Users\Tim\Source\Repos\ForeachChallenge\ConsoleUI\obj\Debug\ConsoleUI.exe
+C:\Users\Tim\Source\Repos\ForeachChallenge\ConsoleUI\obj\Debug\ConsoleUI.pdb
+C:\Users\usr\source\repos\challenges\ForEach\ConsoleUI\bin\Debug\ConsoleUI.exe.config
+C:\Users\usr\source\repos\challenges\ForEach\ConsoleUI\bin\Debug\ConsoleUI.exe
+C:\Users\usr\source\repos\challenges\ForEach\ConsoleUI\bin\Debug\ConsoleUI.pdb
+C:\Users\usr\source\repos\challenges\ForEach\ConsoleUI\obj\Debug\ConsoleUI.csprojAssemblyReference.cache
+C:\Users\usr\source\repos\challenges\ForEach\ConsoleUI\obj\Debug\ConsoleUI.csproj.CoreCompileInputs.cache
+C:\Users\usr\source\repos\challenges\ForEach\ConsoleUI\obj\Debug\ConsoleUI.exe
+C:\Users\usr\source\repos\challenges\ForEach\ConsoleUI\obj\Debug\ConsoleUI.pdb
