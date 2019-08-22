@@ -35,7 +35,8 @@
         <!--<TextBox Grid.Column="2" Grid.Row="5" x:Name="txtEditor"/>-->
         <Label Grid.Row="5" Grid.Column="2" FontSize="16" FontStyle="Oblique" Content="Selected Image:" Margin="10px" HorizontalContentAlignment="Center"/>
         <Image Grid.Column="2" Grid.Row="6" Name="imgBox" Margin="10px"/>
-        
+        <TextBox Grid.Row="7" Grid.Column="1" x:Name="imgWidth"/>
+        <TextBox Grid.Row="7" Grid.Column="2" x:Name="imgHeight"/>
         <ListBox x:Name="myBMPFiles" Grid.Column="2" Grid.Row="1" Grid.RowSpan="4" Margin="10px"/>
     </Grid>
 </Window>

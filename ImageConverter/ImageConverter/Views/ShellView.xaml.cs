@@ -77,14 +77,22 @@ namespace ImageConverter.Views
         {
             Bitmap originalImage;
             Uri filePath;
+            String pathString;
             OpenFileDialog openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() == true)
             {
                 //txtEditor.Text = File.ReadAllText(openFileDialog.FileName);
                 //originalImage = new Bitmap(File.Open(openFileDialog.FileName, FileMode.Open));
-                filePath = new Uri(openFileDialog.FileName);
-                ImageSource imageSource = new BitmapImage(filePath);
+                pathString = openFileDialog.FileName;
+                originalImage = new Bitmap(pathString);
+                //filePath = new Uri(openFileDialog.FileName);
+                ImageSource imageSource = new BitmapImage(new Uri(pathString));
                 imgBox.Source = imageSource;
+
+                //originalImage = new Bitmap(filePath.ToString());
+                
+                imgWidth.Text = originalImage.Width.ToString();
+                imgHeight.Text = originalImage.Height.ToString();
             } 
         }
     }
