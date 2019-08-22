@@ -25,18 +25,29 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
-        <Button Grid.Column="1" Grid.Row="1" Content="Change File Type" Click="Button_Click" Margin="10px"/>
-        <Button Grid.Column="1" Grid.Row="2" Content="Double the Resolution"  Margin="10px" Click="Button_Click_1"/>
+        <Button Grid.Column="1" Grid.Row="1" Content="Change File Type" Click="Button_Click" 
+                Margin="10px"/>
+        <Button Grid.Column="1" Grid.Row="2" Content="Double the Resolution"  Margin="10px" 
+                Click="Button_Click_1"/>
         <Label Content="Pixel Format"/>
-        <Button Grid.Column="1" Grid.Row="4" Content="buttonOpenFile" Margin="10px" Click="buttonOpenFile_Click"/>
+        <Button Grid.Column="1" Grid.Row="4" Content="buttonOpenFile" Margin="10px" 
+                Click="buttonOpenFile_Click"/>
         <!--<TextBox Grid.Column="2" Grid.Row="5" x:Name="txtEditor"/>-->
-        <Label Grid.Row="5" Grid.Column="2" FontSize="16" FontStyle="Oblique" Content="Selected Image:" Margin="10px" HorizontalContentAlignment="Center"/>
-        <Image Grid.Column="2" Grid.Row="6" Name="imgBox" Margin="10px"/>
-        <TextBox Grid.Row="7" Grid.Column="1" x:Name="imgWidth"/>
-        <TextBox Grid.Row="7" Grid.Column="2" x:Name="imgHeight"/>
+        <Label Grid.Row="5" Grid.Column="2" FontSize="16" FontStyle="Oblique" Content="Selected Image:" 
+               Margin="10px" HorizontalContentAlignment="Center"/>
+        <Image Grid.Column="2" Grid.Row="6" Name="imgBox" Margin="10px" Grid.ColumnSpan="5"/>
+        <Label Grid.Row="7" Grid.Column="1" Content="Image Width" FontWeight="Bold"/>
+        <TextBox Margin="10px" BorderThickness="2" BorderBrush="AliceBlue" Grid.Row="8" Grid.Column="1" 
+                 x:Name="imgWidth" TextAlignment="Center" VerticalAlignment="Center"/>
+        <Label Grid.Row="7" Grid.Column="2" Content="Image Height" FontWeight="Bold"/>
+        <TextBox Margin="10px" BorderThickness="2" BorderBrush="AliceBlue" Grid.Row="8" Grid.Column="2" 
+                 x:Name="imgHeight" TextAlignment="Center" VerticalAlignment="Center"/>
         <ListBox x:Name="myBMPFiles" Grid.Column="2" Grid.Row="1" Grid.RowSpan="4" Margin="10px"/>
     </Grid>
 </Window>
