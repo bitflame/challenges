@@ -1,18 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
+using System.IO;
+using System.Windows;
+using Microsoft.Win32;
+using System.Drawing;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-using System.IO;
-using Microsoft.Win32;
 
 namespace ImageConverter.Views
 {
@@ -45,6 +38,54 @@ namespace ImageConverter.Views
             }
             
             //ImageFormat class can convert to so many different types definately read the documentation
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            //Reduce the resolution of the file to half
+            String path = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
+            String[] fileNames = Directory.GetFiles(path,"*.bmp");
+            foreach (var name in fileNames)
+            {
+                Bitmap oldBitmap = new Bitmap(name);
+                int old_wid = oldBitmap.Width;
+                int old_hgt = oldBitmap.Height;
+                
+                //using (Bitmap newBitmap = new Bitmap((int)Math.Ceiling(oldBitmap.HorizontalResolution * 2), (int)Math.Ceiling(oldBitmap.VerticalResolution * 2)))
+                using (Bitmap newBitmap = new Bitmap((old_wid * 2), (old_hgt * 2)))
+                {
+                    
+                    System.Drawing.Point[] points =
+                      {
+                        new System.Drawing.Point(0, 0),
+                        new System.Drawing.Point((int)Math.Ceiling(oldBitmap.HorizontalResolution * 2), 0),
+                        new System.Drawing.Point(0, (int)Math.Ceiling(oldBitmap.VerticalResolution * 2)),
+                      }; 
+                    using (Graphics gr = Graphics.FromImage(newBitmap))
+                    {
+                        gr.DrawImage(oldBitmap, points);
+                    }
+                    newBitmap.SetResolution(oldBitmap.HorizontalResolution * 2, oldBitmap.VerticalResolution * 2);
+                    newBitmap.Save(name + ".bmp");
+                }
+            }
+           
+            
+        }
+
+        private void buttonOpenFile_Click(object sender, RoutedEventArgs e)
+        {
+            Bitmap originalImage;
+            Uri filePath;
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == true)
+            {
+                //txtEditor.Text = File.ReadAllText(openFileDialog.FileName);
+                //originalImage = new Bitmap(File.Open(openFileDialog.FileName, FileMode.Open));
+                filePath = new Uri(openFileDialog.FileName);
+                ImageSource imageSource = new BitmapImage(filePath);
+                imgBox.Source = imageSource;
+            } 
         }
     }
 }

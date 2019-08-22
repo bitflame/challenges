@@ -28,6 +28,14 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
-        <Button Grid.Column="1" Grid.Row="1" Content="Change File Type" Click="Button_Click"/>
+        <Button Grid.Column="1" Grid.Row="1" Content="Change File Type" Click="Button_Click" Margin="10px"/>
+        <Button Grid.Column="1" Grid.Row="2" Content="Double the Resolution"  Margin="10px" Click="Button_Click_1"/>
+        <Label Content="Pixel Format"/>
+        <Button Grid.Column="1" Grid.Row="4" Content="buttonOpenFile" Margin="10px" Click="buttonOpenFile_Click"/>
+        <!--<TextBox Grid.Column="2" Grid.Row="5" x:Name="txtEditor"/>-->
+        <Label Grid.Row="5" Grid.Column="2" FontSize="16" FontStyle="Oblique" Content="Selected Image:" Margin="10px" HorizontalContentAlignment="Center"/>
+        <Image Grid.Column="2" Grid.Row="6" Name="imgBox" Margin="10px"/>
+        
+        <ListBox x:Name="myBMPFiles" Grid.Column="2" Grid.Row="1" Grid.RowSpan="4" Margin="10px"/>
     </Grid>
 </Window>
